@@ -1,16 +1,218 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+ * This file is part of Big Eyes Solution EventApp.
+ *
+ *  Foobar is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Foobar is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ *
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FLISOL 2015</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- <meta name="msapplication-tap-highlight" content="no" /> -->
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="js/libs/jquery-mobile/jquery.mobile.css">
+        <link rel="stylesheet" href="js/libs/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/jquery-mobile/jquery.mobile.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <section id="mainmenu" data-role="page">
+            <div id="mainlogo-bg"><div id="mainlogo"></div></div>
+            <div class="be-main-menu-grid">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#about-flisol" class="ui-btn">
+                            <div class="center-vertically"><i class="fa fa-users fa-4x"></i><br>O FLISOL</div>
+                    </a></div>
+                    <div class="ui-block-b"><a href="#about-freesoftware" class="ui-btn">
+                        <div class="center-vertically"><i class="fa fa-desktop fa-4x"></i><br>Software Livre</div>
+                    </a></div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#about-app" class="ui-btn">
+                            <div class="center-vertically"><i class="fa fa-mobile-phone fa-4x"></i><br>O aplicativo</div>
+                    </a></div>
+                    <div class="ui-block-b"><a href="#eventslist" class="ui-btn">
+                        <div class="center-vertically"><i class="fa fa-building fa-4x"></i><br>Cidades participantes</div>
+                    </a></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="eventslist" data-role="page">
+            <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
+                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <h1></h1>
+            </header>
+            <div role="main" class="ui-content">
+                
+            </div>
+        </section>
+        
+        <section id="city-description" data-role="page">
+            
+        </section>
+        
+        <section id="city-schedule" data-role="page">
+            
+        </section>
+        
+        <section id="about-flisol" data-role="page">
+            <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
+                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <h1></h1>
+            </header>
+            <div role="main" class="ui-content">
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a">
+                        <h3>O que é FLISoL?</h3>
+                    </div>
+                    <div class="ui-body ui-body-a">
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            O Festival Latino-americano de Instalação de Software 
+                            Livre (FLISoL) é o maior evento da América Latina de 
+                            divulgação de Software Livre. Ele é realizado desde 
+                            o ano de 2005, e desde 2008 sua realização acontece 
+                            no 4o. sábado de abril de cada ano. 
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            Seu principal  objetivo é promover o uso de Software 
+                            Livre, mostrando ao público em  geral sua filosofia, 
+                            abrangência, avanços e desenvolvimento. 
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            Para alcançar  estes objetivos, diversas comunidades 
+                            locais de Software Livre (em cada 
+                            país/cidade/localidade), organizam simultâneamente 
+                            eventos em que se  instala, de maneira gratuita e 
+                            totalmente legal, Software Livre nos  computadores 
+                            dos participantes. Além disso, paralelamente 
+                            acontecem palestras,  apresentações e workshops, 
+                            sobre temas locais, nacionais e  latino-americanos 
+                            sobre Software Livre, em toda a sua expressão: 
+                            artística, acadêmica, empresarial e social. 
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            O FLISOL 2015 acontece no dia 25 de Abril em 
+                            diversas cidades, verifique o horário da sua cidade 
+                            na lista <b>Cidades participantes</b>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about-freesoftware" data-role="page">
+            <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
+                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <h1></h1>
+            </header>
+            <div role="main" class="ui-content">
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a">
+                        <h3>O que é Software Livre?</h3>
+                    </div>
+                    <div class="ui-body ui-body-a">
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            Software Livre é uma forma de manifestação de um 
+                            software  em que, resumidamente, permite-se 
+                            adaptações ou modificações em seu  código de forma 
+                            espontânea, ou seja, sem que haja a necessidade de  
+                            solicitar permissão ao seu proprietário para 
+                            modificá-lo.
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            Os objetivos do Software Livre e (controle na 
+                            própria computação e cooperação livre) são atingidas
+                            por concessão do seguinte-direitos de liberdade: 
+                            os usuários são livres para executar, copiar, 
+                            distribuir, estudar, mudar e melhorar o software.
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            Estas liberdades são explicitamente concedidos e não 
+                            suprimidas (como é  o caso do software proprietário). 
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            Assim, o software livre é uma questão  de liberdade,  
+                            não de preço (os usuários são livres - o que inclui 
+                            a liberdade de  redistribuir o software, que pode 
+                            ser feito gratuitamente ou por uma taxa). 
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            Software livre garante as liberdades dos usuários: 
+                            estudar e modificar software, pela disponibilidade 
+                            do código fonte, bem como a liberdade de copiar e 
+                            distribuir.
+                        </p>
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+                            A Free Software Foundation considera um software 
+                            como livre quando atende aos quatro tipos de 
+                            liberdade para os usuários:
+                        </p>
+                        <ul>
+                            <li><b>Liberdade 0:</b> A liberdade para executar o programa, para qualquer propósito;</li>
+                            <li><b>Liberdade 1:</b> A liberdade de estudar o software;</li>
+                            <li><b>Liberdade 2:</b> A liberdade de redistribuir cópias do programa de modo que você possa ajudar ao seu próximo;</li>
+                            <li><b>Liberdade 3:</b> A liberdade de modificar o programa e distribuir estas modificações, de modo que toda a comunidade se beneficie.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about-app" data-role="page">
+            <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
+                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <h1></h1>
+            </header>
+            <div role="main" class="ui-content">
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a">
+                        <h3>O aplicativo</h3>
+                    </div>
+                    <div class="ui-body ui-body-a">
+                        
+                    </div>
+                </div>
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a">
+                        <h3>A plataforma Campuse.ro</h3>
+                    </div>
+                    <div class="ui-body ui-body-a">
+                        
+                    </div>
+                </div>
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a">
+                        <h3>A Big Eyes Solution</h3>
+                    </div>
+                    <div class="ui-body ui-body-a">
+                        
+                    </div>
+                </div>
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-a">
+                        <h3>Outros projetos e tecnologias utilizadas</h3>
+                    </div>
+                    <div class="ui-body ui-body-a">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
