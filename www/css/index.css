@@ -40,7 +40,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc269', endColorstr='#ff9b0c',GradientType=1 );
 }
 
- .ui-header {
+.ui-header {
     background: #FF902E !important;
 }
 
@@ -69,6 +69,11 @@ body {
 .be-main-menu-grid .ui-block-a, .be-main-menu-grid .ui-block-b, .be-main-menu-grid .ui-block-c, .be-main-menu-grid .ui-btn { height: 100% !important; }
 
 .be-main-menu-grid .ui-btn { border-radius: 0 !important; margin: 0 !important}
+
+.be-tec-logo {
+    width: 90%;
+    
+}
 
 .center-vertically {
     position: relative;
