@@ -29,6 +29,8 @@
         <link rel="stylesheet" href="css/index.css">
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/jquery-mobile/jquery.mobile.js"></script>
+        <script src="js/json_populate.js"></script>
+        <script src="js/app-function.js"></script>
     </head>
     <body>
         <section id="mainmenu" data-role="page">
@@ -127,7 +129,7 @@
         
         <section id="about-freesoftware" data-role="page">
             <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
-                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <a href="#mainmenu" class="be-ui-btn-custom"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
                 <h1></h1>
             </header>
             <div role="main" class="ui-content">
@@ -231,5 +233,7 @@
                 </div>
             </div>
         </section>
+        
+        <script src="cordova.js"></script>
     </body>
 </html>

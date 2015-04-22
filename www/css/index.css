@@ -98,8 +98,27 @@ body {
 margin-bottom: 1rem;
 }
 
+.ui-header .ui-btn {
+    margin-top: 0 !important;
+    background: #E37E25 !important;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: none !important;
+    color: #ffffff !important;
+    font-size: 1.01rem !important;
+}
+
+.ui-header {
+    height: 3rem;
+}
+
+.ui-header .ui-title {
+    height: 1.5rem !important;
+}
+
 .ui-content {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .ui-content p { text-align: justify; }
