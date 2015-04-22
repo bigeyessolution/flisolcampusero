@@ -26,7 +26,6 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" href="js/libs/jquery-mobile/jquery.mobile.css">
         <link rel="stylesheet" href="js/libs/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" href="css/flisol-eventapp.css">
         <link rel="stylesheet" href="css/index.css">
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/jquery-mobile/jquery.mobile.js"></script>
@@ -60,7 +59,16 @@
                 <h1></h1>
             </header>
             <div role="main" class="ui-content">
-                
+                <div class="ui-body ui-body-a">
+                    <form class="ui-filterable">
+                        <input id="search-eventlist" data-type="search" placeholder="Procurar cidade ...">
+                    </form>
+                    <ul data-role="listview" data-filter="true" data-input="#search-eventlist" data-inset="true">
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Banana</a></li>
+                        <li><a href="#">Cherry</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
         

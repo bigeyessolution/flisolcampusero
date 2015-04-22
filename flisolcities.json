@@ -1,0 +1,107 @@
+{
+    "version": 1,
+    "contries": [
+        {
+            "country": "Brasil",
+            "Lang": "pt-BR",
+            "states": [
+                {
+                    "state": "Bahia",
+                    "abbreviation": "ba",
+                    "cities": [
+                        {
+                            "city": "Sobradinho",
+                            "slug": "flisol-sobradinho-ba",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Sobradinho",
+                            "coordnators": [ "Laudivan F Almeida", "Antonio Fernandes C Neto", "Washington Luis S Azevedo" ]
+                        }
+                    ]
+                },
+                {
+                    "state": "Goiás",
+                    "abbreviation": "go",
+                    "cities": [
+                        {
+                            "city": "Goiânia",
+                            "slug": "flisol-uberlandia-mg",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/GO/Goiania",
+                            "coordnators": [ "Georjuan Taylor", "Gabriel Azevedo", "Valéria Barros", "Jean Pierre", "Samuel Gonçalves", "Cleiviane Costa", "Lusana Souza", "Juliana Félix", "Paulo Renato", "Marcelo Akira", "Ole Peter Smith", "Flávia Suare" ]
+                        }
+                    ]
+                },
+                {
+                    "state": "Minas Gerais",
+                    "abbreviation": "mg",
+                    "cities": [
+                        {
+                            "city": "Umberlândia",
+                            "slug": "flisol-goiania-go",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Uberlandia",
+                            "coordnators": [ "Diogo Alves Barbosa", "Marília Miranda", "Sávio Ribeiro de Mendonça" ]
+                        }
+                    ]
+                },
+                {
+                    "state": "Paraná",
+                    "abbreviation": "pr",
+                    "cities": [
+                        {
+                            "city": "Castro",
+                            "slug": "flisol-castro-pr",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Castro",
+                            "coordnators": [ "Barbara Tostes", "Claudia Archer", "Erika Kakimoto" ]
+                        },
+                        {
+                            "city": "Curitiba",
+                            "slug": "flisol-curitiba-pr",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Curitiba",
+                            "coordnators": [ "Daniel Lenharo de Souza", "Adriana Cássia da Costa", "Claudia Archer", "Cleber Ianes", "Eduardo Quagliato", "Fabianne Batista Balvedi", "Leonardo Santiago", "Mike Tesliuk", "Paulo Henrique de Lima Santana", "Samuel Henrique", "Reginaldo Radel", "Ricardo Fantin", "Rodrigo Augusto Robles", "Rui Ogawa" ]
+                        }
+                    ]
+                },
+                {
+                    "state": "Rio Grande do Sul",
+                    "abbreviation": "rs",
+                    "cities": [
+                        {
+                            "city": "Novo Hamburgo",
+                            "slug": "flisol-novo-hamburgo-rs",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/NovoHamburgo",
+                            "coordnators": [ "Maicon Strey" ]
+                        }
+                    ]
+                },
+                {
+                    "state": "Santa Catarina",
+                    "abbreviation": "sc",
+                    "cities": [
+                        {
+                            "city": "Chapeco",
+                            "slug": "flisol-chapeco-sc",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Chapeco",
+                            "coordnators": [ "Natan J. Mai" ]
+                        }
+                    ]
+                },
+                {
+                    "state": "São Paulo",
+                    "abbreviation": "sp",
+                    "cities": [
+                        {
+                            "city": "São Paulo",
+                            "slug": "flisol-sao-paulo-sp",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/SaoPaulo",
+                            "coordnators": [ "Thiago Paixão" ]
+                        },
+                        {
+                            "city": "Votuporanga",
+                            "slug": "flisol-votuporanga-sp",
+                            "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Votuporanga",
+                            "coordnators": [ "André Luis Gobbi Primo", "Cristiane Paschoali de Oliveira", "Eder Antonio Pansani Junior", "Natal Henrique Cordeiro", "Ricardo Cesar de Carvalho" ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
