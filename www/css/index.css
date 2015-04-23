@@ -70,9 +70,13 @@ body {
 
 .be-main-menu-grid .ui-btn { border-radius: 0 !important; margin: 0 !important}
 
-.be-tec-logo {
-    width: 90%;
-    
+.be-tec-logo { width: 90%; }
+
+.be-ui-main-btn-custom {
+    background: #E56937 !important;
+    color: #EBD5AF !important;
+    border-color: #D46337 !important;
+    text-shadow: none !important;
 }
 
 .center-vertically {
@@ -122,3 +126,16 @@ margin-bottom: 1rem;
 }
 
 .ui-content p { text-align: justify; }
+
+.ui-btn {
+    font-size: 1rem !important;
+}
+
+#speakers {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+#title {
+    font-size: 1rem;
+}

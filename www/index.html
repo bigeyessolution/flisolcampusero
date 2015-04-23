@@ -29,27 +29,29 @@
         <link rel="stylesheet" href="css/index.css">
         <script src="js/libs/jquery/jquery.js"></script>
         <script src="js/libs/jquery-mobile/jquery.mobile.js"></script>
-        <script src="js/json_populate.js"></script>
+        <!--
         <script src="js/app-function.js"></script>
+        -->
+        <script src="js/json_populate.js"></script>
     </head>
     <body>
         <section id="mainmenu" data-role="page">
             <div id="mainlogo-bg"><div id="mainlogo"></div></div>
             <div class="be-main-menu-grid">
                 <div class="ui-grid-a">
-                    <div class="ui-block-a"><a href="#about-flisol" class="ui-btn">
+                    <div class="ui-block-a"><a href="#about-flisol" data-transition="slide" class="ui-btn be-ui-main-btn-custom">
                             <div class="center-vertically"><i class="fa fa-users fa-4x"></i><br>O FLISOL</div>
                     </a></div>
-                    <div class="ui-block-b"><a href="#about-freesoftware" class="ui-btn">
-                        <div class="center-vertically"><i class="fa fa-desktop fa-4x"></i><br>Software Livre</div>
+                    <div class="ui-block-b"><a href="#about-freesoftware" data-transition="slide" class="ui-btn be-ui-main-btn-custom">
+                        <div class="center-vertically"><i class="fa fa-code fa-4x"></i><br>Software Livre</div>
                     </a></div>
                 </div>
                 <div class="ui-grid-a">
-                    <div class="ui-block-a"><a href="#about-app" class="ui-btn">
+                    <div class="ui-block-a"><a href="#about-app" data-transition="slide" class="ui-btn be-ui-main-btn-custom">
                             <div class="center-vertically"><i class="fa fa-mobile-phone fa-4x"></i><br>O aplicativo</div>
                     </a></div>
-                    <div class="ui-block-b"><a href="#eventslist" class="ui-btn">
-                        <div class="center-vertically"><i class="fa fa-building fa-4x"></i><br>Cidades participantes</div>
+                    <div class="ui-block-b"><a href="#eventslist" data-transition="slide" class="ui-btn be-ui-main-btn-custom">
+                            <div class="center-vertically"><i class="fa fa-location-arrow fa-4x"></i><br><span style="font-size: 0.8rem !important;">Cidades participantes</span></div>
                     </a></div>
                 </div>
             </div>
@@ -57,34 +59,82 @@
         
         <section id="eventslist" data-role="page">
             <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
-                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <a href="#mainmenu" data-transition="slide" data-direction="reverse"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
                 <h1></h1>
             </header>
             <div role="main" class="ui-content">
-                <div class="ui-body ui-body-a">
-                    <form class="ui-filterable">
-                        <input id="search-eventlist" data-type="search" placeholder="Procurar cidade ...">
-                    </form>
-                    <ul data-role="listview" data-filter="true" data-input="#search-eventlist" data-inset="true">
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Banana</a></li>
-                        <li><a href="#">Cherry</a></li>
-                    </ul>
+                <form class="ui-filterable">
+                    <input id="search-eventlist" data-type="search" placeholder="Procurar cidade ...">
+                </form>
+                <div id="eventlist-collapsible-set" data-role="collapsible-set" data-filter="true" data-input="#search-eventlist">
+                    <div data-role="collapsible">
+                        <h3>Bahia</h3>
+                        <ul data-role="listview" data-filter="true" data-input="#search-eventlist" data-inset="true">
+                            <li><a href="#city-description" data-transition="slide">Salvador</a></li>
+                            <li><a href="#">Sobradinho</a></li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>São Paulo</h3>
+                        <ul data-role="listview" data-filter="true" data-input="#search-eventlist" data-inset="true">
+                            <li><a href="#">São Paulo</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section id="city-description" data-role="page">
-            
-        </section>
-        
-        <section id="city-schedule" data-role="page">
-            
+            <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
+                <a href="#eventslist" data-transition="slide" data-direction="reverse"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <h1></h1>
+            </header>
+            <div role="main" class="ui-content">
+                <div class="ui-corner-all custom-corners">
+                    <h2>FLISOL <span id="city">Salvador</span>-<span id="uf" style="text-transform: uppercase">ba</span></h2>
+                    <p>
+                        Dsdsds dsmdsmsd sdkdskds dsksdkdsksd,.skdskdsdk
+                    </p>
+                    <div class="ui-bar ui-bar-a">
+                        <h3>Programação</h3>
+                    </div>
+                    <div id="schedule" class="ui-body" data-role="collapsible-set" data-enhanced="true">
+                        <div data-role="collapsible">
+                            <h3><span id="title">Titulo da Palestra</span><br><span id="speakers">Laudivan</span></h3>
+                            <div>
+                                <h4>18:00</h4>
+                                <p>
+                                    fsfsdfsdf fsdfsdfsdf fsdfsdfsdf sdfsdfsd
+                                </p>
+                            </div>
+                        </div>
+                        <div data-role="collapsible">
+                            <h3><span id="title">Titulo da Palestra</span><br><span id="speakers">Laudivan</span></h3>
+                            <div>
+                                <h4>18:00</h4>
+                                <p>
+                                    fsfsdfsdf fsdfsdfsdf fsdfsdfsdf sdfsdfsd
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--#schedule-->
+                    <div class="ui-bar ui-bar-a">
+                        <h3>Coordenadores</h3>
+                    </div>
+                    <div class="ui-body">
+                        <ul id="coord" data-role="listview" data-inset="true">
+                            <li>Huguinho</li>
+                            <li>Zezinho</li>
+                            <li>Luizinho</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <section id="about-flisol" data-role="page">
             <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
-                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <a href="#mainmenu" data-transition="slide" data-direction="reverse"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
                 <h1></h1>
             </header>
             <div role="main" class="ui-content">
@@ -92,44 +142,42 @@
                     <div class="ui-bar ui-bar-a">
                         <h3>O que é FLISoL?</h3>
                     </div>
-                    <div class="ui-body ui-body-a">
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            O Festival Latino-americano de Instalação de Software 
-                            Livre (FLISoL) é o maior evento da América Latina de 
-                            divulgação de Software Livre. Ele é realizado desde 
-                            o ano de 2005, e desde 2008 sua realização acontece 
-                            no 4o. sábado de abril de cada ano. 
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            Seu principal  objetivo é promover o uso de Software 
-                            Livre, mostrando ao público em  geral sua filosofia, 
-                            abrangência, avanços e desenvolvimento. 
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            Para alcançar  estes objetivos, diversas comunidades 
-                            locais de Software Livre (em cada 
-                            país/cidade/localidade), organizam simultâneamente 
-                            eventos em que se  instala, de maneira gratuita e 
-                            totalmente legal, Software Livre nos  computadores 
-                            dos participantes. Além disso, paralelamente 
-                            acontecem palestras,  apresentações e workshops, 
-                            sobre temas locais, nacionais e  latino-americanos 
-                            sobre Software Livre, em toda a sua expressão: 
-                            artística, acadêmica, empresarial e social. 
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            O FLISOL 2015 acontece no dia 25 de Abril em 
-                            diversas cidades, verifique o horário da sua cidade 
-                            na lista <b>Cidades participantes</b>!
-                        </p>
-                    </div>
+                    <p>
+                        O Festival Latino-americano de Instalação de Software 
+                        Livre (FLISoL) é o maior evento da América Latina de 
+                        divulgação de Software Livre. Ele é realizado desde 
+                        o ano de 2005, e desde 2008 sua realização acontece 
+                        no 4o. sábado de abril de cada ano. 
+                    </p>
+                    <p>
+                        Seu principal objetivo é promover o uso de Software 
+                        Livre, mostrando ao público em  geral sua filosofia, 
+                        abrangência, avanços e desenvolvimento. 
+                    </p>
+                    <p>
+                        Para alcançar estes objetivos, diversas comunidades 
+                        locais de Software Livre (em cada 
+                        país/cidade/localidade), organizam simultâneamente 
+                        eventos em que se  instala, de maneira gratuita e 
+                        totalmente legal, Software Livre nos  computadores 
+                        dos participantes. Além disso, paralelamente 
+                        acontecem palestras,  apresentações e workshops, 
+                        sobre temas locais, nacionais e  latino-americanos 
+                        sobre Software Livre, em toda a sua expressão: 
+                        artística, acadêmica, empresarial e social. 
+                    </p>
+                    <p>
+                        O FLISOL 2015 acontece no dia 25 de Abril em 
+                        diversas cidades, verifique o horário da sua cidade 
+                        na lista <b>Cidades participantes</b>!
+                    </p>
                 </div>
             </div>
         </section>
         
         <section id="about-freesoftware" data-role="page">
             <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
-                <a href="#mainmenu" class="be-ui-btn-custom"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <a href="#mainmenu" data-transition="slide" data-direction="reverse" class="be-ui-btn-custom"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
                 <h1></h1>
             </header>
             <div role="main" class="ui-content">
@@ -137,57 +185,55 @@
                     <div class="ui-bar ui-bar-a">
                         <h3>O que é Software Livre?</h3>
                     </div>
-                    <div class="ui-body ui-body-a">
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            Software Livre é uma forma de manifestação de um 
-                            software  em que, resumidamente, permite-se 
-                            adaptações ou modificações em seu  código de forma 
-                            espontânea, ou seja, sem que haja a necessidade de  
-                            solicitar permissão ao seu proprietário para 
-                            modificá-lo.
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            Os objetivos do Software Livre e (controle na 
-                            própria computação e cooperação livre) são atingidas
-                            por concessão do seguinte-direitos de liberdade: 
-                            os usuários são livres para executar, copiar, 
-                            distribuir, estudar, mudar e melhorar o software.
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            Estas liberdades são explicitamente concedidos e não 
-                            suprimidas (como é  o caso do software proprietário). 
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            Assim, o software livre é uma questão  de liberdade,  
-                            não de preço (os usuários são livres - o que inclui 
-                            a liberdade de  redistribuir o software, que pode 
-                            ser feito gratuitamente ou por uma taxa). 
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            Software livre garante as liberdades dos usuários: 
-                            estudar e modificar software, pela disponibilidade 
-                            do código fonte, bem como a liberdade de copiar e 
-                            distribuir.
-                        </p>
-                        <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                            A Free Software Foundation considera um software 
-                            como livre quando atende aos quatro tipos de 
-                            liberdade para os usuários:
-                        </p>
-                        <ul>
-                            <li><b>Liberdade 0:</b> A liberdade para executar o programa, para qualquer propósito;</li>
-                            <li><b>Liberdade 1:</b> A liberdade de estudar o software;</li>
-                            <li><b>Liberdade 2:</b> A liberdade de redistribuir cópias do programa de modo que você possa ajudar ao seu próximo;</li>
-                            <li><b>Liberdade 3:</b> A liberdade de modificar o programa e distribuir estas modificações, de modo que toda a comunidade se beneficie.</li>
-                        </ul>
-                    </div>
+                    <p>
+                        Software Livre é uma forma de manifestação de um 
+                        software  em que, resumidamente, permite-se 
+                        adaptações ou modificações em seu  código de forma 
+                        espontânea, ou seja, sem que haja a necessidade de  
+                        solicitar permissão ao seu proprietário para 
+                        modificá-lo.
+                    </p>
+                    <p>
+                        Os objetivos do Software Livre e (controle na 
+                        própria computação e cooperação livre) são atingidas
+                        por concessão do seguinte-direitos de liberdade: 
+                        os usuários são livres para executar, copiar, 
+                        distribuir, estudar, mudar e melhorar o software.
+                    </p>
+                    <p>
+                        Estas liberdades são explicitamente concedidos e não 
+                        suprimidas (como é  o caso do software proprietário). 
+                    </p>
+                    <p>
+                        Assim, o software livre é uma questão  de liberdade,  
+                        não de preço (os usuários são livres - o que inclui 
+                        a liberdade de  redistribuir o software, que pode 
+                        ser feito gratuitamente ou por uma taxa). 
+                    </p>
+                    <p>
+                        Software livre garante as liberdades dos usuários: 
+                        estudar e modificar software, pela disponibilidade 
+                        do código fonte, bem como a liberdade de copiar e 
+                        distribuir.
+                    </p>
+                    <p>
+                        A Free Software Foundation considera um software 
+                        como livre quando atende aos quatro tipos de 
+                        liberdade para os usuários:
+                    </p>
+                    <ul>
+                        <li><b>Liberdade 0:</b> A liberdade para executar o programa, para qualquer propósito;</li>
+                        <li><b>Liberdade 1:</b> A liberdade de estudar o software;</li>
+                        <li><b>Liberdade 2:</b> A liberdade de redistribuir cópias do programa de modo que você possa ajudar ao seu próximo;</li>
+                        <li><b>Liberdade 3:</b> A liberdade de modificar o programa e distribuir estas modificações, de modo que toda a comunidade se beneficie.</li>
+                    </ul>
                 </div>
             </div>
         </section>
         
         <section id="about-app" data-role="page">
             <header data-role="header" data-tap-toggle="false" class="ui-header-fixed ui-header-fullscreen">
-                <a href="#mainmenu"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
+                <a href="#mainmenu" data-transition="slide" data-direction="reverse"><i class="fa fa-chevron-left"></i>&nbsp;Voltar</a>
                 <h1></h1>
             </header>
             <div role="main" class="ui-content">
@@ -209,7 +255,7 @@
                 </div>
                 <div class="ui-corner-all custom-corners">
                     <div class="ui-bar ui-bar-a">
-                        <h3>A Big Eyes Solution</h3>
+                        <h3>Big Eyes Solution</h3>
                     </div>
                     <div class="ui-body ui-body-a">
                         
