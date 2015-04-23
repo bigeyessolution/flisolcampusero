@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "contries": [
+    "countries": [
         {
             "country": "Brasil",
             "Lang": "pt-BR",
@@ -11,6 +11,8 @@
                     "cities": [
                         {
                             "city": "Sobradinho",
+                            "place" : "Praça Geraldo Silva. Av Paulo Afonso. Centro.",
+                            "description" : "Esta é a segunda vez que Sobradinho participa do FLISOL. Desta vez será ao ar livre e terá início às 17 horas.",
                             "slug": "flisol-sobradinho-ba",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Sobradinho",
                             "coordnators": [ "Laudivan F Almeida", "Antonio Fernandes C Neto", "Washington Luis S Azevedo" ]
@@ -23,6 +25,8 @@
                     "cities": [
                         {
                             "city": "Goiânia",
+                            "place" : "Av. Perimetral Norte, 4129. Vila João Vaz, Goiânia - GO",
+                            "description" : "Para participar do evento, acesse http://flisol.aslgo.org.br/ para se cadastrar e conferir a programação do evento.",
                             "slug": "flisol-uberlandia-mg",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/GO/Goiania",
                             "coordnators": [ "Georjuan Taylor", "Gabriel Azevedo", "Valéria Barros", "Jean Pierre", "Samuel Gonçalves", "Cleiviane Costa", "Lusana Souza", "Juliana Félix", "Paulo Renato", "Marcelo Akira", "Ole Peter Smith", "Flávia Suare" ]
@@ -35,6 +39,8 @@
                     "cities": [
                         {
                             "city": "Umberlândia",
+                            "place" : "Atrio Business Center.<br>Av. Afonso Pena 3538, Uberlandia, MG.",
+                            "description" : "",
                             "slug": "flisol-goiania-go",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Uberlandia",
                             "coordnators": [ "Diogo Alves Barbosa", "Marília Miranda", "Sávio Ribeiro de Mendonça" ]
@@ -47,12 +53,16 @@
                     "cities": [
                         {
                             "city": "Castro",
+                            "place" : "Centro da Juventude Wallace Tadeu de Mello e Silva, ao lado da Pista de Atletismo e Fórum, Bairro Araucária.",
+                            "description" : "Aproveite o dia para tirar suas dúvidas, trocar ideias, instalar programas de código aberto e livres para: edição de texto, áudio, vídeo, edição de imagens, desenho vetorial, publicação web, conhecer sistemas de gerenciamento de sites, configurações de rede, desenho 3D, games e muito mais!",
                             "slug": "flisol-castro-pr",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Castro",
                             "coordnators": [ "Barbara Tostes", "Claudia Archer", "Erika Kakimoto" ]
                         },
                         {
                             "city": "Curitiba",
+                            "place" : "PUCPR - Pontifícia Universidade Católica do Paraná.<br>2o. andar do Bloco da Escola de Educação e Humanidades. o Bloco Amarelo ou Bloco 1).<br>Rua Imaculada Conceição, 1155 - Prado Velho - Curitiba PR.",
+                            "description" : "",
                             "slug": "flisol-curitiba-pr",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Curitiba",
                             "coordnators": [ "Daniel Lenharo de Souza", "Adriana Cássia da Costa", "Claudia Archer", "Cleber Ianes", "Eduardo Quagliato", "Fabianne Batista Balvedi", "Leonardo Santiago", "Mike Tesliuk", "Paulo Henrique de Lima Santana", "Samuel Henrique", "Reginaldo Radel", "Ricardo Fantin", "Rodrigo Augusto Robles", "Rui Ogawa" ]
@@ -65,6 +75,8 @@
                     "cities": [
                         {
                             "city": "Novo Hamburgo",
+                            "place" : "Campus II da Feevale, Prédio Arenito.",
+                            "description" : "Neste ano de 2015 Novo Hamburgo sediará mais uma vez o Festival Latino Americano de Instalação de Software Livre - Flisol, venha festejar conosco!",
                             "slug": "flisol-novo-hamburgo-rs",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/NovoHamburgo",
                             "coordnators": [ "Maicon Strey" ]
@@ -77,6 +89,8 @@
                     "cities": [
                         {
                             "city": "Chapeco",
+                            "place" : "Universidade Federal da Fronteira Sul (UFFS).",
+                            "description" : "",
                             "slug": "flisol-chapeco-sc",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Chapeco",
                             "coordnators": [ "Natan J. Mai" ]
@@ -89,12 +103,16 @@
                     "cities": [
                         {
                             "city": "São Paulo",
+                            "place" : "Centro Cultural São Paulo - Rua Vergueiro, 1000 - Paraíso.",
+                            "description" : "O FLISOL em São Paulo capital desse ano vai ocorrer no mesmo local e simultâniamente ao Cryptorave 2015. O FLISOL terá início às 9h do dia 25 de abril e conta com diversas atividades ao longo do dia, como instalação do sistema operacional Linux e diversos outros Softwares Livres nos notebooks dos visitantes, divesos talks e debates em formato de desconferẽncia que elucidarão o uso do Software Livre.",
                             "slug": "flisol-sao-paulo-sp",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/SaoPaulo",
                             "coordnators": [ "Thiago Paixão" ]
                         },
                         {
                             "city": "Votuporanga",
+                            "place" : "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.<br>Campus Votuporanga.Av. Jerônimo Figueira da Costa, 3014 - Bairro: Pozzobon.",
+                            "description" : "",
                             "slug": "flisol-votuporanga-sp",
                             "urlflisol": "http://flisol.info/FLISOL2015/Brasil/Votuporanga",
                             "coordnators": [ "André Luis Gobbi Primo", "Cristiane Paschoali de Oliveira", "Eder Antonio Pansani Junior", "Natal Henrique Cordeiro", "Ricardo Cesar de Carvalho" ]

@@ -11,7 +11,7 @@
     <preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait"/>
     <preference name="target-device" value="universal"/>
-    <preference name="fullscreen" value="true"/>
+    <preference name="fullscreen" value="false"/>
     <preference name="webviewbounce" value="false"/>
     <preference name="prerendered-icon" value="true"/>
     <preference name="stay-in-webview" value="false"/>
@@ -23,7 +23,7 @@
     <preference name="auto-hide-splash-screen" value="true"/>
     <preference name="android-minSdkVersion" value="11"/>
     <preference name="android-installLocation" value="auto"/>
-    <gap:plugin name="com.adobe.plugins.gaplugin" version="2.4.0" />
+    <gap:plugin name="com.adobe.plugins.gaplugin" version="2.4.0"/>
     <gap:plugin name="org.apache.cordova.splashscreen"/>
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png"/>
     <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png"/>
