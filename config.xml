@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.bigeyessolution.flisolcampusero" version="0.0.0">
-    <name>flisolcampusero</name>
+    <name>FLISOL 2015</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Este aplicativo é resultado da parceria entre a coordenação brasileira do FLISOL (Festival Latino Americano de Instalações de Software Livre), a Futura Networks e a Big Eyes Solution.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="contato@bigeyessolution.com" href="http://www.bigeyessolution.com">
+        Big Eyes Solution Team
     </author>
     <content src="index.html"/>
     <access origin="*"/>
+    <preference name="orientation" value="portrait"/>
+    <preference name="target-device" value="universal"/>
+    <preference name="fullscreen" value="true"/>
+    <preference name="webviewbounce" value="false"/>
+    <preference name="prerendered-icon" value="true"/>
+    <preference name="stay-in-webview" value="false"/>
+    <preference name="ios-statusbarstyle" value="black-opaque"/>
+    <preference name="detect-data-types" value="true"/>
+    <preference name="exit-on-suspend" value="true"/>
+    <preference name="BackgroundColor" value="0xffffffff"/>
+    <preference name="SplashScreenDelay" value="3000"/>
+    <preference name="auto-hide-splash-screen" value="true"/>
+    <preference name="android-minSdkVersion" value="11"/>
+    <preference name="android-installLocation" value="auto"/>
+    <gap:plugin name="com.adobe.plugins.gaplugin" version="2.4.0" />
+    <icon src="icon.png"/>
 </widget>
