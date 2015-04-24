@@ -21,6 +21,9 @@ var json_cities_list = false;
 var city_details = false;
 var city_schedule = false;
 
+var aux_city_schedule = false;
+var aux_city_details = false;
+
 /**
  * This function obtains the list of participants cities from json URL and calls
  * populate_list_of_cities function to populate the appropriate screen.
@@ -52,31 +55,67 @@ function get_list_of_cities ()
 
 /**
  * This function obtains the city's data and populate #city-description page.
- * @param {string} city_slug
+ * @param {integer} state_index
+ * @param {integer} city_index
  */
-function get_city_details (city_slug) 
+function get_city_details (state_index, city_index) 
 {
-    var campusero_api_url = 'http://campuse.ro/api/legacy/events/'+city_slug+'/schedule';
+    state = json_cities_list.countries[0].states[state_index];
     
-    $.getJSON(campusero_api_url, function (data)
+    $('#uf').html(state.abbreviation);
+    
+    city = state.cities[city_index];
+    
+    set_city_details(city.slug, city);
+    
+    var campusero_api_url = 'http://campuse.ro/api/legacy/events/'+city.slug+'/schedule';
+    
+    $.getJSON(campusero_api_url, function (schedule)
     {
+        set_city_schedule(aux_city_details.slug, schedule);
         
     }).fail(function () 
     {
+        schedule = window.localStorage.getItem(aux_city_details.slug+'-schedule');
         
+        schedule = schedule ? JSON.parse(schedule) : [];
+        
+        set_city_schedule(aux_city_details.slug, schedule);
     }).done(function () 
     {
+        $('#city').html(aux_city_details.city);
+        $('#description').html(aux_city_details.description);
+        $('#place').html(aux_city_details.place);
         
+        $('#coordnators').empty();
+        
+        $.each(aux_city_details.coordnators, function (index, coordnator)
+        {
+            $('<li>'+coordnator+'</li>').appendTo('#coordnators');
+        });
+        
+        $('#coordnators').trigger('create');
+        
+        $('#schedule').empty();
+        
+        $.each(aux_city_schedule, function (index, item)
+        {
+            date = new Date(item.date);
+            min = (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes());
+            hour = date.getHours();
+            day = date.getDate();
+            mon = date.getMonth() + 1;
+            mon = (mon < 10 ? '0' + mon : mon);
+            $('<div data-role="collapsible"><h3><span id="title">'+item.title+
+                '</span><br><span id="speakers">'+item.speakers+'</span></h3>'+
+                '<div><h4>'+day+'/'+mon+' '+hour+':'+min+'</h4><p>'+item.description+'</p></div></div>'
+            ).appendTo('#schedule');
+        });
+        
+        $('#schedule').trigger('create');
+        
+        $(':mobile-pagecontainer').pagecontainer('change', $('#city-description'), {transition: 'slide'} );
     });
-}
-
-/*
- * 
- * @param {object} city
- */
-function populate_city_details (city)
-{
-    
 }
 
 /**
@@ -112,11 +151,10 @@ function populate_list_of_cities (list) {
         for(index2 = 0; index2 < cities.length; index2++) {
             city = cities[index2];
             
-            cities_ul += '<li><a onclick="get_city_details ("'+city.slug+
-                    '")">'+city.city+'</a></li>';
+            cities_ul += '<li><a onclick="get_city_details ('+index+','+index2+')">'+city.city+'</a></li>';
         }
         
-        $('<div id="'+state.abbreviation+'" data-role="collapsible" class="animateMe"><h3>'+
+        $('<div id="'+state.abbreviation+'" data-role="collapsible"><h3>'+
             state.state+'</h3><ul data-role="listview" data-filter="true" '+
             'data-input="#search-eventlist" data-inset="true">'+cities_ul+'</ul></div>')
           .appendTo('#eventlist-collapsible-set');
@@ -137,9 +175,23 @@ function set_city_description (city)
 
 /**
  * 
+ * @param {string} slug
  * @param {array} schedule
  */
-function set_city_schedule (schedule)
+function set_city_schedule (slug, schedule)
 {
+    window.localStorage.setItem(slug+'-schedule', JSON.stringify(schedule));
     
+    aux_city_schedule = schedule;
+}
+
+/**
+ * 
+ * @param {string} slug
+ * @param {object} details
+ */
+function set_city_details (slug, details) {
+    window.localStorage.setItem(slug+'-details', JSON.stringify(details));
+    
+    aux_city_details = details;
 }

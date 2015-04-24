@@ -17,9 +17,7 @@
 
 $(function ()
 {
-    $(document).on('pagecontainerchange', function (event, ui) {
-    });
-
+    
     $(document).on('pagecontainerbeforechange', function(event, ui) {
         if (typeof ui.toPage !== 'object') return;
         
