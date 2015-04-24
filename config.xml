@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.bigeyessolution.flisolcampusero" version="0.9.0">
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.bigeyessolution.flisolcampusero" version="0.9.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>FLISOL 2015</name>
     <description>
         Este aplicativo é resultado da parceria entre a coordenação brasileira do FLISOL (Festival Latino Americano de Instalações de Software Livre), a Futura Networks e a Big Eyes Solution.
