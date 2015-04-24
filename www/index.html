@@ -64,21 +64,7 @@
                 <form class="ui-filterable">
                     <input id="search-eventlist" data-type="search" placeholder="Procurar cidade ...">
                 </form>
-                <div id="eventlist-collapsible-set" data-role="collapsible-set" data-filter="true" data-input="#search-eventlist">
-                    <div data-role="collapsible" class="animateMe">
-                        <h3>Bahia</h3>
-                        <ul data-role="listview" data-filter="true" data-input="#search-eventlist" data-inset="true">
-                            <li><a href="#city-description" data-transition="slide">Salvador</a></li>
-                            <li><a href="#">Sobradinho</a></li>
-                        </ul>
-                    </div>
-                    <div data-role="collapsible" class="animateMe">
-                        <h3>São Paulo</h3>
-                        <ul data-role="listview" data-filter="true" data-input="#search-eventlist" data-inset="true">
-                            <li><a href="#">São Paulo</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <div id="eventlist-collapsible-set" data-role="collapsible-set" data-filter="true" data-input="#search-eventlist"></div>
             </div>
         </section>
         
@@ -89,10 +75,12 @@
             </header>
             <div role="main" class="ui-content">
                 <div class="ui-corner-all custom-corners">
-                    <h2>FLISOL <span id="city">Salvador</span>-<span id="uf" style="text-transform: uppercase">ba</span></h2>
-                    <p>
-                        Dsdsds dsmdsmsd sdkdskds dsksdkdsksd,.skdskdsdk
-                    </p>
+                    <h2>FLISOL <span id="city"></span>-<span id="uf" style="text-transform: uppercase"></span></h2>
+                    <div id="description"></div>
+                    <div class="ui-bar ui-bar-a">
+                        <h3>Local</h3>
+                    </div>
+                    <div id="place" class="ui-body" data-role="collapsible-set" data-enhanced="true"></div>
                     <div class="ui-bar ui-bar-a">
                         <h3>Programação</h3>
                     </div>

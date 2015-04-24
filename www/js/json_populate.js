@@ -99,8 +99,9 @@ function set_list_of_cities (list_version, cities)
  * @returns {undefined}
  */
 function populate_list_of_cities (list) {
-    //states = list.countries[0].states;
-    states = list.contries[0].states; //
+    states = list.countries[0].states;
+    
+    $('#eventlist-collapsible-set').empty();
     
     for(index = 0; index < states.length; index++) {
         state = states[index];
@@ -108,21 +109,21 @@ function populate_list_of_cities (list) {
         
         cities_ul = '';
         
-        for(index2 = 0; index2 < cities; index2++) {
+        for(index2 = 0; index2 < cities.length; index2++) {
             city = cities[index2];
             
             cities_ul += '<li><a onclick="get_city_details ("'+city.slug+
                     '")">'+city.city+'</a></li>';
         }
         
-        $('#eventlist-collapsible-set').empty();
-        
         $('<div id="'+state.abbreviation+'" data-role="collapsible" class="animateMe"><h3>'+
             state.state+'</h3><ul data-role="listview" data-filter="true" '+
             'data-input="#search-eventlist" data-inset="true">'+cities_ul+'</ul></div>')
           .appendTo('#eventlist-collapsible-set');
+  
     }
     
+    $('#eventlist-collapsible-set').trigger('create');
 }
 
 /**
